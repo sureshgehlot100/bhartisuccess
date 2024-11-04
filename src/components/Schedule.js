@@ -21,7 +21,7 @@ import { GetTickets } from "./Introduce";
 
 const CustomConnector = styled(StepConnector)(({ theme }) => ({
   "& .MuiStepConnector-line": {
-    borderColor: "#dfac35",
+    borderColor: "#F9F9F9",
     borderLeftWidth: 3,
     marginLeft: "0",
     height: 80,
@@ -109,7 +109,20 @@ const Schedule = () => {
                   }}
                 >
                   <Box display="flex" alignItems="start" flexDirection="column" gap={2}>
-                    
+                    <Chip
+                      label={index + 1}
+                      sx={{
+                        backgroundColor: "#333333", 
+                        color: "white", 
+                        borderRadius: "50%", 
+                        width: 40, // Set width for the circle
+                        height: 40, // Set height for the circle
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        fontWeight: 800,
+                        fontSize:"20px"
+                      }} />
                     <Typography
                       fontSize={parseInt(smallFontSize) + 4}
                       fontWeight={600}
@@ -119,8 +132,8 @@ const Schedule = () => {
                     </Typography>
                     <Chip
                       label={time}
-                      icon={<AccessTimeIcon  sx={{ color: "#000" }} />}
-                      sx={{  color: "#000", padding:"2px", fontSize:"large" }}
+                      icon={<AccessTimeIcon sx={{ color: "#000" }} />}
+                      sx={{ color: "#000", padding: "2px", fontSize: "large" }}
                     />
                   </Box>
                   <List sx={{ mt: 2 }}>
