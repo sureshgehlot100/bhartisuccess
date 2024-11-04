@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --major: #F9F9F9;
+  --minor: #c0bbbb;
+  --patch: rgb(49, 145, 235);
+}
+
+body {
+  font-family: "Sora", "sans-serif";
+  background-color: var(--major);
+} 
+
+.css-aq183p-MuiGrid-root {
+  margin-left: -8px;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+.css-ai311t-MuiTypography-root {
+  font-size: 1.1rem !important;
+  font-weight: 500;
+}
+
+#pricingCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.css-1179dlq-MuiStepConnector-root{
+    margin: 0 auto !important;
+}
+
+.css-1cnytuy-MuiStepConnector-root{
+  margin-left: auto !important;
+  margin: 0 auto !important;
+}
+
+.css-1bzpx2o-MuiGrid-root{
+    width: 100.4% !important;
+}
+
+.css-16g5rpk-MuiGrid-root{
+    width: 99.7% !important;
+}
+
+
+/* Case Studies Carousel Styles */
+.react-multi-carousel-list {
+  padding-bottom: 22px;
+}
+
+.react-multi-carousel-dot-list {
+  bottom: 3px;
+}
+
+.react-multi-carousel-dot-list li {
+  border: 0px;
+}
+
+.react-multi-carousel-dot--active {
+  border: 0px;
+}
+
+.react-multi-carousel-dot--active button {
+  background-color: var(--major) !important;
+}
+
+.react-multi-carousel-dot-list{
+  margin-bottom: 10px !important;
+}
+
+
+@media (min-width: 0px) {
+  .css-pinmrc-MuiGrid-root {
+    margin-bottom: 0px !important;
+  }
+
+  .css-8ypn0m-MuiGrid-root {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  #buttontime {
+    padding: 0.7rem 0.4rem;
+  }
+}
+
+@media (max-width: 970px) {
+  #buttontime {
+    padding: 0.7rem 0.4rem;
+  }
+}
