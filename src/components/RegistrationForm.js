@@ -20,7 +20,7 @@ const FormContainer = styled(Container)(({ theme }) => ({
   boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
   [theme.breakpoints.down('sm')]: {
     padding: theme.spacing(2),
-    maxWidth: '90%',
+    maxWidth: '100%',
   },
 }));
 
@@ -75,7 +75,7 @@ export default function RegistrationForm() {
         </Grid>
       </Grid> */}
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} >
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
             <TextField

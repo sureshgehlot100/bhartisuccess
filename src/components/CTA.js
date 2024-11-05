@@ -22,7 +22,7 @@
         <Box
           sx={{
             mb: 6,
-            p: 4,
+            p: 1,
             borderRadius: "10px",
             backgroundColor: "#f7f7f9",
           }}
