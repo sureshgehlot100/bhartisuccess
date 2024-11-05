@@ -43,9 +43,10 @@ export const GetTickets = () => {
           justifyContent: "center",
         }}
         onClick={() => {
-          window.scrollTo(0, 0)
-        }
-        }
+          const isSmallScreen = window.innerWidth < 768; 
+          const scrollToPosition = isSmallScreen ? 600 : 0; 
+          window.scrollTo(0, scrollToPosition);
+      }}
       >
         <EventIcon sx={{ mr: 1 }} />
         GRAB YOUR TICKETS

@@ -160,9 +160,10 @@ const StickyFooter = () => {
                 },
               }}
               onClick={() => {
-                window.scrollTo(0, 0)
-              }
-              }
+                const isSmallScreen = window.innerWidth < 768; // Adjust the width as needed for your breakpoint
+                const scrollToPosition = isSmallScreen ? 600 : 0; // Adjust the value (100) to the desired position for small screens
+                window.scrollTo(0, scrollToPosition);
+            }}
             >
               Grab Your Tickets Now
             </Button>
