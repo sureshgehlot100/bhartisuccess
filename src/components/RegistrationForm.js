@@ -31,10 +31,10 @@ const LogoBox = styled(Box)({
 });
 
 const languages = [
-  { value: 'English', label: 'English' },
+  // { value: 'English', label: 'English' },
   { value: 'Hindi', label: 'Hindi' },
   { value: 'Marathi', label: 'Marathi' },
-  { value: 'Gujrati', label: 'Gujrati' },
+  // { value: 'Gujrati', label: 'Gujrati' },
 ];
 
 export default function RegistrationForm() {

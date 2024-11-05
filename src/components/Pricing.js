@@ -50,7 +50,7 @@ const PricingSection = () => {
     {
       planTitle: "VIP",
       originalPrice: 9990,
-      discountPrice: 6999,
+      discountPrice: 6990,
       listItems: [
         { text: "Registration Kit", available: true },
         {
@@ -137,8 +137,8 @@ const PricingSection = () => {
                       detail.planTitle === "Gold"
                         ? "#ffc800"
                         : detail.planTitle === "VIP"
-                        ? "#02c5b4"
-                        : "#0762e4",
+                          ? "#02c5b4"
+                          : "#0762e4",
                     padding: "0.5rem 0",
                     borderRadius: "8px",
                   }}
@@ -210,45 +210,61 @@ const PricingSection = () => {
                 </List>
 
                 <Box
-  sx={{
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    gap: 2,
-    alignItems: "center",
-  }}
->
-  <Button
-    variant="contained"
-    color="primary"
-    sx={{
-      width: "100%",
-      backgroundColor: "lightgray",
-      color: "#7065f0",
-      fontWeight: "bold",
-      '&:hover': {
-        // backgroundColor: "darkgray", 
-      },
-    }}
-  >
-    Buy Now
-  </Button>
+                  sx={{
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 2,
+                    alignItems: "center",
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    sx={{
+                      width: "100%",
+                      backgroundColor: "white",
+                      color: "#7065f0",
+                      fontWeight: "bold",
+                      '&:hover': {
+                        // backgroundColor: "darkgray", 
+                      },
+                    }}
+                    onClick={() => {
+                      const isSmallScreen = window.innerWidth < 768; 
+                      const scrollToPosition = isSmallScreen ? 600 : 0; 
+                      window.scrollTo(0, scrollToPosition);
+                  }}
+                  >
+                    Buy Now
+                  </Button>
 
-  <Button
-    variant="contained"
-    color="secondary"
-    sx={{
-      width: "100%",
-      backgroundColor: "#7065f0",
-      color: "white",
-      '&:hover': {
-        backgroundColor: "darkpurple", // Optional hover effect
-      },
-    }}
-  >
-    Buy 2 seats @ {parseInt(detail.discountPrice) - 1000}
-  </Button>
-</Box>
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    sx={{
+                      width: "100%",
+                      backgroundColor: "#7065f0",
+                      color: "white",
+                      '&:hover': {
+                        backgroundColor: "darkpurple", // Optional hover effect
+                      },
+                    }}
+                    onClick={() => {
+                      const isSmallScreen = window.innerWidth < 768; 
+                      const scrollToPosition = isSmallScreen ? 600 : 0; 
+                      window.scrollTo(0, scrollToPosition);
+                  }}
+                  >
+                    Buy 2 seats @
+                    {detail.planTitle === "Gold"
+                      ? (detail.discountPrice * 2) - 1000
+                      : detail.planTitle === "VIP"
+                        ? (detail.discountPrice * 2) - 1500
+                        : (detail.discountPrice * 2) - 2000
+                    }
+                  </Button>
+                </Box>
 
               </CardContent>
             </Card>
