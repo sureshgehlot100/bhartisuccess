@@ -42,6 +42,10 @@ export const GetTickets = () => {
           alignItems: "center",
           justifyContent: "center",
         }}
+        onClick={() => {
+          window.scrollTo(0, 0)
+        }
+        }
       >
         <EventIcon sx={{ mr: 1 }} />
         GRAB YOUR TICKETS

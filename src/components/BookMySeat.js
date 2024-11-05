@@ -5,7 +5,7 @@ import useResponsiveFontSize from "../useResponsiveFontSize";
 const BookSeat = () => {
   const { smallFontSize, largeFontSize } = useResponsiveFontSize();
   return (
-    <Container maxWidth="lg" sx={{ py: 4, bgcolor: 'minor', mt: 6}}>
+    <Container maxWidth="lg" sx={{ py: 4, bgcolor: 'minor', mt: 6 }}>
       <Box sx={{ mb: 2 }}>
         <Typography
           variant="body1"
@@ -24,7 +24,7 @@ const BookSeat = () => {
           fontSize={largeFontSize}
           color='#7065f0'
         >
-          "Success Secrets of Business & Life" <br/> <span>  in person in Pune</span>
+          "Success Secrets of Business & Life" <br /> <span>  in person in Pune</span>
         </Typography>
       </Box>
 
@@ -38,10 +38,14 @@ const BookSeat = () => {
           fontSize: "1.2rem",
           backgroundColor: 'rgb(51,51,51)',
           transition: 'transform 0.25s',
-          '&:hover':{
+          '&:hover': {
             transform: 'scale(0.95)'
           }
         }}
+        onClick={() => {
+          window.scrollTo(0, 0)
+        }
+        }
       >
         Book My Seat Now
       </Button>

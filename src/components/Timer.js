@@ -159,6 +159,10 @@ const StickyFooter = () => {
                   bgcolor: "#333333",
                 },
               }}
+              onClick={() => {
+                window.scrollTo(0, 0)
+              }
+              }
             >
               Grab Your Tickets Now
             </Button>
