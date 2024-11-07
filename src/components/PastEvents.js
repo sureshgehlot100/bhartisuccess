@@ -25,7 +25,7 @@ const PastEvents = () => {
     img3,
     img4,
     img5,
-    img6,
+    // img6,
   ];
 
   const imagesCarosuel = [
@@ -40,11 +40,11 @@ const PastEvents = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1200 },
-      items: 4,
+      items: 3,
     },
     desktop: {
       breakpoint: { max: 1200, min: 960 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 960, min: 600 },
@@ -59,22 +59,22 @@ const PastEvents = () => {
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Box sx={{ width: "100%", mb: 4 }}>
-  <Typography
-    variant="h3"
-    component="div"
-    sx={{
-      textAlign: "center",
-      color: 'black',
-      fontWeight: '600',
-    }}
-    fontSize={largeFontSize}
-  >
-    <span>SOME</span>{" "}
-    <span style={{ color: '#7065f0', fontWeight: 'bold' }}>GLIMPSES FROM</span>{" "}
-    <span style={{ textTransform: "uppercase" }}>THE MASSIVELY SUCCESSFUL</span>{" "}
-    <span style={{ color: '#7065f0', fontWeight: 'bold' }}>PAST EVENTS</span>
-  </Typography>
-</Box>
+        <Typography
+          variant="h3"
+          component="div"
+          sx={{
+            textAlign: "center",
+            color: 'black',
+            fontWeight: '600',
+          }}
+          fontSize={largeFontSize}
+        >
+          <span>SOME</span>{" "}
+          <span style={{ color: '#7065f0', fontWeight: 'bold' }}>GLIMPSES FROM</span>{" "}
+          <span style={{ textTransform: "uppercase" }}>THE MASSIVELY SUCCESSFUL</span>{" "}
+          <span style={{ color: '#7065f0', fontWeight: 'bold' }}>PAST EVENTS</span>
+        </Typography>
+      </Box>
 
 
       <Grid container spacing={4}>

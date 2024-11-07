@@ -48,7 +48,7 @@ const PricingSection = () => {
     },
 
     {
-      planTitle: "VIP",
+      planTitle: "Diamond",
       originalPrice: 9990,
       discountPrice: 6990,
       listItems: [
@@ -78,7 +78,7 @@ const PricingSection = () => {
     },
 
     {
-      planTitle: "Diamond",
+      planTitle: "VIP",
       originalPrice: 14990,
       discountPrice: 9990,
       listItems: [
@@ -231,10 +231,10 @@ const PricingSection = () => {
                       },
                     }}
                     onClick={() => {
-                      const isSmallScreen = window.innerWidth < 768; 
-                      const scrollToPosition = isSmallScreen ? 600 : 0; 
+                      const isSmallScreen = window.innerWidth < 768;
+                      const scrollToPosition = isSmallScreen ? 600 : 0;
                       window.scrollTo(0, scrollToPosition);
-                  }}
+                    }}
                   >
                     Buy Now
                   </Button>
@@ -251,10 +251,10 @@ const PricingSection = () => {
                       },
                     }}
                     onClick={() => {
-                      const isSmallScreen = window.innerWidth < 768; 
-                      const scrollToPosition = isSmallScreen ? 600 : 0; 
+                      const isSmallScreen = window.innerWidth < 768;
+                      const scrollToPosition = isSmallScreen ? 600 : 0;
                       window.scrollTo(0, scrollToPosition);
-                  }}
+                    }}
                   >
                     Buy 2 seats @
                     {detail.planTitle === "Gold"

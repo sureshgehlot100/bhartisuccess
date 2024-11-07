@@ -11,13 +11,13 @@ const bonuses = [
     id: 1,
     title: "BONUS 01",
     description: "Financial Planning & Money Management session (One Hr) by Mr. Ravindra Bharti Sir",
-    price: "RS 10,000",
+    price: "Rs. 50,000 /-",
   },
   {
     id: 2,
     title: "BONUS 02",
     description: "Billionaire Blue Print :- Share Market Book by Mr.Ravindra Bharti Sir",
-    price: "Rs. 1200/-",
+    price: "Rs. 999 /-",
   },
   {
     id: 3,

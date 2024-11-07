@@ -7,21 +7,41 @@ import {
   List,
   ListItem,
 } from "@mui/material";
-import { Facebook, YouTube, Instagram, Telegram } from '@mui/icons-material';
+import { Facebook, YouTube, Instagram, Telegram, Email, Phone } from '@mui/icons-material';
 
 const Footer = () => {
   const footerSections = [
     {
       title: "Address",
       items: [
-        "Marvel Fuego",
-        "Magarpatta, Hadapsar",
-        "Pune - 411033, Maharashtra",
+        "Head Office: No 4010, ",
+        "4th Floor, Marvel Fuego ",
+        "Near Amanora Mall",
+        "Opp WeWork/Seasons Mall,",
+        "Magarpatta, Pune 411036.",
       ],
     },
     {
       title: "Contact Us",
-      items: ["0000099999", "0981187634", "09090-80808"],
+      items: [
+        <div style={{ cursor: 'pointer' }}>
+          <div  style={{
+            display: 'flex',
+            alignItems: 'center',}}>
+            <Phone /><p>+918700987654</p>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            maxWidth: '270px',
+            paddingTop: '10px',
+            wordBreak: 'break-word',
+            gap: '4px'
+          }}>
+            <Email /> :<span>support@bhartibusinessconsultancy.com</span>
+          </div>
+        </div>
+      ],
     },
     {
       title: "Our Services",
@@ -57,23 +77,23 @@ const Footer = () => {
                 }}
               >
                 {section.items.map((item, idx) => (
-        <ListItem
-          key={idx}
-          sx={{
-            p: 0,
-            m: "0.5em 0",
-            cursor: section.isSocialMedia ? "pointer" : "none",
-          }}
-        >
-          {section.isSocialMedia && item.link ? (
-            <a href={item.link} target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
-              {item.icon}
-            </a>
-          ) : (
-            item
-          )}
-        </ListItem>
-      ))}
+                  <ListItem
+                    key={idx}
+                    sx={{
+                      p: 0,
+                      m: "0.5em 0",
+                      cursor: section.isSocialMedia ? "pointer" : "none",
+                    }}
+                  >
+                    {section.isSocialMedia && item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
+                        {item.icon}
+                      </a>
+                    ) : (
+                      item
+                    )}
+                  </ListItem>
+                ))}
               </List>
             </Grid>
           ))}

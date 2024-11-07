@@ -31,7 +31,7 @@ const CustomConnector = styled(StepConnector)(({ theme }) => ({
 const scheduleData = [
   {
     title: "Welcome & Introduction",
-    time: "10:00 AM to 12 PM",
+    time: "09:00 AM to 12 PM",
     scheduleListData: [
       "Use of Marketing & Branding to Grow Your Business",
       "Financial Planning & Money Meditation",
@@ -52,7 +52,7 @@ const scheduleData = [
     title: "Risk - Success & Handling Power Challenges",
     time: "2:30 PM – 5.30 PM",
     scheduleListData: [
-      "The 20 Years in 2 Years Principle & Family Involvement & Importance",
+      " 20 Years in 2 Years Principle & Family Involvement & Importance",
       "Overcoming Ego, Barriers in Business & Life, Goal Setting & Balancing Life Priorities, Active Listening, Acceptance, & Women Empowerment",
     ],
   },
@@ -68,7 +68,7 @@ const scheduleData = [
   },
   {
     title: "Closing Remarks",
-    time: "7:00 PM",
+    time: "7:30 PM",
     scheduleListData: [],
   },
 ];

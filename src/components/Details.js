@@ -86,7 +86,7 @@ const Details = () => {
                 color: '#fff'
               }}
             >
-              <Typography variant="body1">Time: 9.00 AM to 6:30 PM </Typography>
+              <Typography variant="body1">Time: 9.00 AM to 7:30 PM </Typography>
             </Box>
           </Grid>
         </Grid>
