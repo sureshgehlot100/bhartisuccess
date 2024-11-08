@@ -7,7 +7,7 @@ const Details = () => {
     <Box
       sx={{
         position: "relative",
-        backgroundImage: `url(${backgroundImage})`, 
+        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
@@ -71,7 +71,7 @@ const Details = () => {
               }}
             >
               <Typography variant="body1">
-              Venue: The Central Park Hotel, Pune
+                Venue: Bharti Resort,Bori Aindi, Pune
               </Typography>
             </Box>
           </Grid>

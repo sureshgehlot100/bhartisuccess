@@ -160,8 +160,8 @@ const StickyFooter = () => {
                 },
               }}
               onClick={() => {
-                const isSmallScreen = window.innerWidth < 768; // Adjust the width as needed for your breakpoint
-                const scrollToPosition = isSmallScreen ? 600 : 0; // Adjust the value (100) to the desired position for small screens
+                const isSmallScreen = window.innerWidth < 768; 
+                const scrollToPosition = isSmallScreen ? 600 : 0; 
                 window.scrollTo(0, scrollToPosition);
             }}
             >

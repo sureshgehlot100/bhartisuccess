@@ -15,6 +15,7 @@ import BookSeat from './components/BookMySeat';
 import Footer from './components/Footer';
 import BeforeAndAfter from './components/BeforeAndAfter';
 import BonusesComponent from './components/Bonus';
+import MediaPartners from './components/MediaPartner';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <BeforeAndAfter />
       {/* <FAQ /> */}
       <BookSeat />
+      <MediaPartners/>
       <Footer />
       <div style={{marginBottom: '3.5em'}}></div>
       <StickyFooter />

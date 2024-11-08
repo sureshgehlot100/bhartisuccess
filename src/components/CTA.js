@@ -97,14 +97,11 @@ const CTA = () => {
               paddingTop: "56.25%",
               cursor: "pointer",
             }}
-            // onClick={() =>
-            //   window.open("https://www.youtube.com/watch?v=Trm59KOAq3E", "_blank")
-            // }
           >
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/Trm59KOAq3E?autoplay=1&mute=1" // Add autoplay=1 and mute=1 for autoplay to work
+              src="https://www.youtube.com/embed/Trm59KOAq3E?autoplay=1&mute=1"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
@@ -234,7 +231,7 @@ const CTA = () => {
                     Venue
                   </Typography>
                   <Typography variant="body2">
-                    The Central Park Hotel, Near Council Hall, Pune
+                    Bharti Resort,Boriaindi Uruli Kanchan, A/p, Bori Aindi, Pune, Maharashtra 412202
                   </Typography>
                 </Box>
               </Box>
