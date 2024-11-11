@@ -165,7 +165,7 @@ const CTA = () => {
                   <Typography variant="body1" fontWeight={600}>
                     Date
                   </Typography>
-                  <Typography variant="body2">23 November 2024</Typography>
+                  <Typography variant="body2">24 November 2024</Typography>
                 </Box>
               </Box>
             </Grid>
@@ -176,8 +176,7 @@ const CTA = () => {
                   display: "flex",
                   alignItems: "center",
                   bgcolor: "#fff",
-                  padding: 1,
-                  marginRight: 5,
+                  padding: 1, 
                   borderRadius: 2,
                   color: "black",
                   border: "1px solid #ccc",
@@ -203,14 +202,14 @@ const CTA = () => {
             </Grid>
 
             {/* Venue */}
-            <Grid item xs={12}>
+            <Grid item xs={12} >
               <Box
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   bgcolor: "#fff",
                   padding: 1,
-                  marginRight: 5,
+                   
                   borderRadius: 2,
                   color: "black",
                   border: "1px solid #ccc",
@@ -246,7 +245,7 @@ const CTA = () => {
                   bgcolor: "#fff",
                   padding: 1,
 
-                  marginRight: 5,
+                   
                   borderRadius: 2,
                   color: "black",
                   border: "1px solid #ccc",

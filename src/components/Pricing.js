@@ -24,7 +24,7 @@ const PricingSection = () => {
       listItems: [
         { text: "Registration Kit", available: true },
         {
-          text: "Access to Success Secret of Business & Life Pune Event (23rd Nov)",
+          text: "Access to Success Secret of Business & Life Pune Event (24th Nov)",
           available: true,
         },
         { text: "Access To Exclusive Community", available: true },
@@ -37,11 +37,11 @@ const PricingSection = () => {
           available: false,
         },
         {
-          text: `Special Session With Mr. Ravindra Bharti - Financial Planning & Money Management session (Worth Rs.10000/-) `,
+          text: `Special Session With Mr. Ravindra Bharti - Financial Planning & Money Management session (Worth Rs.50,000/-) `,
           available: false,
         },
         {
-          text: `Billionaire Blue Print - Share Market Book by Mr.Ravindra Bharti Sir (Rs. Worth 1,200/-) `,
+          text: `Billionaire Blue Print - Share Market Book by Mr.Ravindra Bharti Sir (Rs. Worth 999/-) `,
           available: false,
         },
       ],
@@ -54,7 +54,7 @@ const PricingSection = () => {
       listItems: [
         { text: "Registration Kit", available: true },
         {
-          text: "Access to Success Secret of Business & Life Pune Event (23rd Nov)",
+          text: "Access to Success Secret of Business & Life Pune Event (24th Nov)",
           available: true,
         },
         { text: "Access To Exclusive Community ", available: true },
@@ -67,11 +67,11 @@ const PricingSection = () => {
           available: true,
         },
         {
-          text: `Special Session With Mr. Ravindra Bharti - Financial Planning & Money Management session (Worth Rs.10000/-) `,
+          text: `Special Session With Mr. Ravindra Bharti - Financial Planning & Money Management session (Worth Rs.50,000/-) `,
           available: true,
         },
         {
-          text: `Billionaire Blue Print - Share Market Book by Mr.Ravindra Bharti Sir (Rs. Worth 1,200/-) `,
+          text: `Billionaire Blue Print - Share Market Book by Mr.Ravindra Bharti Sir (Rs. Worth 999/-) `,
           available: true,
         },
       ],
@@ -84,7 +84,7 @@ const PricingSection = () => {
       listItems: [
         { text: "Registration Kit", available: true },
         {
-          text: "Access to Success Secret of Business & Life Pune Event (23rd Nov)",
+          text: "Access to Success Secret of Business & Life Pune Event (24th Nov)",
           available: true,
         },
         { text: "Access To Exclusive Community ", available: true },
@@ -97,11 +97,11 @@ const PricingSection = () => {
           available: true,
         },
         {
-          text: `Special Session With Mr. Ravindra Bharti - Financial Planning & Money Management session (Worth Rs.10000/-) `,
+          text: `Special Session With Mr. Ravindra Bharti - Financial Planning & Money Management session (Worth Rs.50,000/-) `,
           available: true,
         },
         {
-          text: `Billionaire Blue Print - Share Market Book by Mr.Ravindra Bharti Sir (Rs. Worth 1,200/-) `,
+          text: `Billionaire Blue Print - Share Market Book by Mr.Ravindra Bharti Sir (Rs. Worth 999/-) `,
           available: true,
         },
       ],

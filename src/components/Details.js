@@ -55,7 +55,7 @@ const Details = () => {
               }}
             >
               <Typography variant="body1">
-                Date: Sunday, 23rd November 2024
+                Date: Sunday, 24th November 2024
               </Typography>
             </Box>
           </Grid>

@@ -133,12 +133,15 @@ const Schedule = () => {
                 <Card
                   sx={{
                     p: 3,
-                    backgroundColor: "#f8f9fa",
+                    backgroundColor: "rgba(255, 255, 255, 0.5)",
                     borderRadius: "8px",
+                    backdropFilter: "blur(0px)",
+                    boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
                     boxShadow: 3,
                     zIndex: 2,
                     position: 'relative',
                     transition: "transform 0.3s ease",
+                    border: "1px solid rgba(255, 255, 255, 0.2)", 
                     '&:hover': {
                       transform: 'scale(1.05)',
                     },

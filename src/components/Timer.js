@@ -93,7 +93,7 @@ const StickyFooter = () => {
                 {(hours <= 9) ? `0${hours}` : hours}
               </Typography>
               <Typography m="0em 0.5em" fontWeight={800} fontSize={parseInt(smallFontSize) - 10}>
-                Hours
+                Hr
               </Typography>
             </Button>
 
@@ -116,7 +116,7 @@ const StickyFooter = () => {
                 {(minutes <= 9) ? `0${minutes}` : minutes}
               </Typography>
               <Typography m="0em 0.5em" fontWeight={800} fontSize={parseInt(smallFontSize) - 10}>
-                Minutes
+                Min
               </Typography>
             </Button>
 
@@ -139,7 +139,7 @@ const StickyFooter = () => {
                 {(seconds <= 9) ? `0${seconds}` : seconds}
               </Typography>
               <Typography m="0em 0.5em" fontWeight={800} fontSize={parseInt(smallFontSize) - 10}>
-                Seconds
+                Sec
               </Typography>
             </Button>
           </Grid>

@@ -29,7 +29,7 @@ const Footer = () => {
             display: 'flex',
             alignItems: 'center',
           }}>
-            <Phone /><p>+918700987654</p>
+            <Phone /><p>+917350202020</p>
           </div>
           <div style={{
             display: 'flex',
