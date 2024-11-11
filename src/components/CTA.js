@@ -101,7 +101,7 @@ const CTA = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/Trm59KOAq3E?autoplay=1&mute=1"
+              src="https://www.youtube.com/embed/Trm59KOAq3E?autoplay=1&mute=1&controls=0&loop=1&playlist=Trm59KOAq3E&modestbranding=1"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
@@ -115,6 +115,7 @@ const CTA = () => {
               }}
               title="Video"
             />
+
             <Box
               sx={{
                 position: "absolute",
@@ -209,7 +210,6 @@ const CTA = () => {
                   alignItems: "center",
                   bgcolor: "#fff",
                   padding: 1,
-
                   marginRight: 5,
                   borderRadius: 2,
                   color: "black",

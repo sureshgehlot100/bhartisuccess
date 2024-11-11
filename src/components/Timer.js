@@ -155,15 +155,21 @@ const StickyFooter = () => {
                 fontWeight: 'bold',
                 borderRadius: "8px",
                 boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
-                "&:hover": {
-                  bgcolor: "#333333",
+                animation: "scaleAnimation 1s infinite alternate",
+                "@keyframes scaleAnimation": {
+                  "0%": {
+                    transform: "scale(1)",
+                  },
+                  "100%": {
+                    transform: "scale(0.95, 0.95)",
+                  },
                 },
               }}
               onClick={() => {
-                const isSmallScreen = window.innerWidth < 768; 
-                const scrollToPosition = isSmallScreen ? 600 : 0; 
+                const isSmallScreen = window.innerWidth < 768;
+                const scrollToPosition = isSmallScreen ? 600 : 0;
                 window.scrollTo(0, scrollToPosition);
-            }}
+              }}
             >
               Grab Your Tickets Now
             </Button>

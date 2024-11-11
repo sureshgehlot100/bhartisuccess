@@ -69,6 +69,10 @@ const BonusesComponent = () => {
                 flexDirection: 'column',
                 justifyContent: 'space-between',
                 p: 2,
+                transition: "transform 0.3s ease", 
+                  '&:hover': {
+                    transform: 'scale(1.05)', 
+                  },
               }}
             >
               <CardContent sx={{ flex: 1 }}>
@@ -105,10 +109,6 @@ const BonusesComponent = () => {
           </Grid>
         ))}
       </Grid>
-
-
-
-
       {/* Who Should Attend Section */}
       <Box sx={{ mt: 5, pt: 4, borderTop: '1px solid #ddd' }}>
         <Typography
@@ -132,6 +132,10 @@ const BonusesComponent = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
+                  transition: "transform 0.3s ease", 
+                  '&:hover': {
+                    transform: 'scale(1.05)', 
+                  },
                 }}
               >
                 {category.icon}

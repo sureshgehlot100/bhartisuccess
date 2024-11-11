@@ -12,21 +12,29 @@ import {
 import { useTheme } from "@mui/material/styles";
 import useResponsiveFontSize from "../useResponsiveFontSize";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import introduce from "../assets/introduce-min.jpg";
+import introduce from "../assets/Westin_54-min.jpg";
 import EventIcon from "@mui/icons-material/Event";
 
 export const GetTickets = () => {
+  
   return (
     <Box
       sx={{
         width: "100%",
         bgcolor: "#deab35",
-        border: "1px solid #fff",
         borderRadius: "22px",
         transition: "transform 0.25s",
-        "&:hover": {
-          transform: "scale(0.95, 0.95)",
-        },
+        position: 'relative',
+        zIndex: 100,
+        animation: "scaleAnimation 1s infinite alternate", 
+        "@keyframes scaleAnimation": { 
+          "0%": {
+            transform: "scale(1)",
+          },
+          "100%": {
+            transform: "scale(0.95, 0.95)",
+          },
+        },       
       }}
     >
       <Button
@@ -43,10 +51,10 @@ export const GetTickets = () => {
           justifyContent: "center",
         }}
         onClick={() => {
-          const isSmallScreen = window.innerWidth < 768; 
-          const scrollToPosition = isSmallScreen ? 600 : 0; 
+          const isSmallScreen = window.innerWidth < 768;
+          const scrollToPosition = isSmallScreen ? 600 : 0;
           window.scrollTo(0, scrollToPosition);
-      }}
+        }}
       >
         <EventIcon sx={{ mr: 1 }} />
         GRAB YOUR TICKETS
@@ -126,6 +134,10 @@ const Introduce = () => {
                 objectFit: "cover",
                 borderRadius: "4px",
                 height: "100%",
+                transition: "transform 0.3s ease",
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                },
               }}
               alt="Sample"
               src={introduce}

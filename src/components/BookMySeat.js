@@ -40,7 +40,16 @@ const BookSeat = () => {
           transition: 'transform 0.25s',
           '&:hover':{
             transform: 'scale(0.95)'
-          }
+          },
+          animation: "scaleAnimation 1s infinite alternate", 
+        "@keyframes scaleAnimation": { 
+          "0%": {
+            transform: "scale(1)",
+          },
+          "100%": {
+            transform: "scale(0.95, 0.95)",
+          },
+        },
         }}
         onClick={() => {
           const isSmallScreen = window.innerWidth < 768; 

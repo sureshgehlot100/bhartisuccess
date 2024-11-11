@@ -43,7 +43,7 @@ const ListInfo = () => {
         >
           <span>You Call  Yourself a Businessman But...</span>{" "}
           <Typography component="span" sx={{ color: "#7065f0" }}>
-           
+
           </Typography>
         </Typography>
       </Box>
@@ -114,6 +114,10 @@ const ListInfo = () => {
                   boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
                   borderRadius: "8px",
                   height: "100%",
+                  transition: "transform 0.3s ease", 
+                  '&:hover': {
+                    transform: 'scale(1.05)', 
+                  },
                 }}
               >
                 <CardContent>

@@ -18,10 +18,11 @@ import { styled } from "@mui/system";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import useResponsiveFontSize from "../useResponsiveFontSize";
 import { GetTickets } from "./Introduce";
+import backgroundImage from "../assets/SSP_1184-min.jpg";
 
 const CustomConnector = styled(StepConnector)(({ theme }) => ({
   "& .MuiStepConnector-line": {
-    borderColor: "#F9F9F9",
+    borderColor: "transparent",
     borderLeftWidth: 3,
     marginLeft: "0",
     height: 80,
@@ -76,13 +77,42 @@ const scheduleData = [
 const Schedule = () => {
   const { smallFontSize, largeFontSize } = useResponsiveFontSize();
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container maxWidth="lg" sx={{
+      position: "relative",
+      padding: "5em 1em 4em 1em",
+      border: '1px dashed patch'
+    }}>
+      {/* Overlay */}
+      <Box
+        sx={{
+          position: "absolute",
+          inset: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          zIndex: 1,
+        }}
+      />
+      {/* Background Image */}
+      <Box
+        sx={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundRepeat: 'no-repeat',
+          zIndex: 0,
+        }}
+      />
+
       <Typography
         fontSize={parseInt(largeFontSize)}
         textAlign={"center"}
-        color="#7065f0"
+        color="#f8f9fa"
         fontWeight={700}
-        mb={4}
+        mb={6}
+        zIndex={2}
+        position={"relative"}
       >
         Here is the schedule for the session
       </Typography>
@@ -90,7 +120,7 @@ const Schedule = () => {
         orientation="vertical"
         connector={<CustomConnector />}
         activeStep={-1}
-        sx={{ mb: 5 }}
+        sx={{ mb: 10 }}
         nonLinear
       >
         {scheduleData.map(({ title, time, scheduleListData }, index) => (
@@ -106,22 +136,28 @@ const Schedule = () => {
                     backgroundColor: "#f8f9fa",
                     borderRadius: "8px",
                     boxShadow: 3,
+                    zIndex: 2,
+                    position: 'relative',
+                    transition: "transform 0.3s ease",
+                    '&:hover': {
+                      transform: 'scale(1.05)',
+                    },
                   }}
                 >
                   <Box display="flex" alignItems="start" flexDirection="column" gap={2}>
                     <Chip
                       label={index + 1}
                       sx={{
-                        backgroundColor: "#333333", 
-                        color: "white", 
-                        borderRadius: "50%", 
-                        width: 40, // Set width for the circle
-                        height: 40, // Set height for the circle
+                        backgroundColor: "#333333",
+                        color: "white",
+                        borderRadius: "50%",
+                        width: 40,
+                        height: 40,
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
                         fontWeight: 800,
-                        fontSize:"20px"
+                        fontSize: "20px"
                       }} />
                     <Typography
                       fontSize={parseInt(smallFontSize) + 4}
@@ -152,7 +188,9 @@ const Schedule = () => {
         ))}
       </Stepper>
 
-      <GetTickets />
+      <div sx={{ mt: "40px" }}>
+        <GetTickets />
+      </div>
     </Container>
   );
 };

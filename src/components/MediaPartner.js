@@ -61,11 +61,11 @@ export default function MediaPartners() {
             <Gradient />
             <Container maxWidth="lg" margin="auto">
                 <Typography
-                    variant="h3"
+                    variant="h5"
                     align="center"
                     gutterBottom
                     sx={{
-                        color: '#002B3D',
+                        color: '#fff',
                         fontWeight: 'bold',
                         fontSize: { xs: '2.5rem', md: '3.75rem' },
                         marginBottom: theme.spacing(6),

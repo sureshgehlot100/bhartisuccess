@@ -22,9 +22,9 @@ const VenueComponent = () => {
         }}
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.9551233156779!3d-37.81720997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577b4cd1d2b585f!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1635806515483!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15136.275893608474!2d74.1809532!3d18.4805347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e1015d5859b9%3A0x3045ab229e281d77!2sBharti%20Resorts%20Adventure%20%26%20Amusement%20Park!5e0!3m2!1sen!2sin!4v1731315970341!5m2!1sen!2sin" 
           width="100%"
-          height="500" // Adjust height as needed
+          height="600" // Adjust height as needed
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"

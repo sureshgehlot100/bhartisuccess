@@ -66,6 +66,10 @@ const Mentor = () => {
           display: "block",
           mb: 3,
           borderRadius: "8px",
+          transition: "transform 0.3s ease",
+          '&:hover': {
+            transform: 'scale(1.05)',
+          },
         }}
       />
       <Typography
@@ -84,7 +88,7 @@ const Mentor = () => {
       </Typography>
 
       {/* social cards */}
-      
+
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Grid container spacing={4}>
           {socialMediaDetails.map(({ icon, subs, description }, index) => (

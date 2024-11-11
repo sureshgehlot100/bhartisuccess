@@ -53,6 +53,9 @@ li {
 .css-16g5rpk-MuiGrid-root{
     width: 99.7% !important;
 }
+.css-1aad92j-MuiList-root{
+  cursor: pointer;
+}
 
 
 /* Case Studies Carousel Styles */
@@ -78,6 +81,10 @@ li {
 
 .react-multi-carousel-dot-list{
   margin-bottom: 10px !important;
+}
+
+.css-1fw24xs{
+  filter: blur(3px) !important;
 }
 
 

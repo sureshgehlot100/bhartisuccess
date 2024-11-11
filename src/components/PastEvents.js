@@ -8,7 +8,7 @@ import img2 from "../assets/SSP_0918-min.jpg"
 import img3 from "../assets/SSP_1067-min.jpg"
 import img4 from "../assets/SSP_1184-min.jpg"
 import img5 from "../assets/SSP_1245-min.jpg"
-import img6 from "../assets/SSP_0775-min.jpg"
+import img6 from "../assets/Saam Tv Award.jpg"
 import imgCarosuel from "../assets/DSC_4684-min.jpg"
 import imgCarosuelSecond from "../assets/IMG_5954-min.jpg"
 import imgCarosuelThrid from "../assets/DSC_0293-min.jpg"
@@ -25,7 +25,7 @@ const PastEvents = () => {
     img3,
     img4,
     img5,
-    // img6,
+    img6,
   ];
 
   const imagesCarosuel = [
@@ -75,8 +75,6 @@ const PastEvents = () => {
           <span style={{ color: '#7065f0', fontWeight: 'bold' }}>PAST EVENTS</span>
         </Typography>
       </Box>
-
-
       <Grid container spacing={4}>
         <Grid item xs={12}>
           <Carousel
@@ -101,6 +99,10 @@ const PastEvents = () => {
                   height: { xs: "250px", md: "200px" },
                   overflow: "hidden",
                   padding: "10px",
+                  transition: "transform 0.3s ease",
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                  },
                 }}
               >
                 <img
@@ -116,7 +118,48 @@ const PastEvents = () => {
             ))}
           </Carousel>
         </Grid>
-
+        <Grid item xs={12}>
+          <Carousel
+            responsive={responsive}
+            swipeable
+            draggable
+            showDots
+            infinite
+            autoPlay
+            autoPlaySpeed={3000}
+            keyBoardControl
+            customTransition="all 0.5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            itemClass="carousel-item-padding-40-px"
+          >
+            {images.map((src, index) => (
+              <Box
+                key={index}
+                sx={{
+                  height: { xs: "250px", md: "200px" },
+                  overflow: "hidden",
+                  padding: "10px",
+                  transition: "transform 0.3s ease",
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                  },
+                }}
+              >
+                <img
+                  src={src}
+                  alt={`gallery-small-${index}`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </Box>
+            ))}
+          </Carousel>
+        </Grid>
         <Grid item xs={12}>
           <Carousel
             responsive={responsive}
@@ -140,6 +183,10 @@ const PastEvents = () => {
                   height: { xs: "350px", md: "450px" },
                   overflow: "hidden",
                   padding: "10px",
+                  transition: "transform 0.3s ease",
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                  },
                 }}
               >
                 <img

@@ -25,9 +25,10 @@ const Footer = () => {
       title: "Contact Us",
       items: [
         <div style={{ cursor: 'pointer' }}>
-          <div  style={{
+          <div style={{
             display: 'flex',
-            alignItems: 'center',}}>
+            alignItems: 'center',
+          }}>
             <Phone /><p>+918700987654</p>
           </div>
           <div style={{
@@ -45,7 +46,12 @@ const Footer = () => {
     },
     {
       title: "Our Services",
-      items: ["Consultancy", "Share Market", "IPO"],
+      items: [
+        "Consultancy",
+        <a href="/Privacy_Policy" style={{ color: "inherit", textDecoration: "none" }}>Privacy Policy</a>,
+        "Share Market",
+        "IPO",
+      ],
     },
     {
       title: "Social Media",
@@ -68,7 +74,7 @@ const Footer = () => {
         <Grid container spacing={4}>
           {footerSections.map((section, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" gutterBottom cursor="pointer">
                 {section.title}
               </Typography>
               <List
@@ -99,7 +105,6 @@ const Footer = () => {
           ))}
         </Grid>
       </Container>
-
       <Box sx={{ bgcolor: "#222", py: 3, mt: 4 }}>
         <Container maxWidth="lg">
           <Typography align="center" variant="body2">
