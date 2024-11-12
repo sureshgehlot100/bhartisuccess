@@ -133,7 +133,7 @@ const Schedule = () => {
                 <Card
                   sx={{
                     p: 3,
-                    backgroundColor: "rgba(255, 255, 255, 0.5)",
+                    backgroundColor: "black",
                     borderRadius: "8px",
                     backdropFilter: "blur(0px)",
                     boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
@@ -141,7 +141,7 @@ const Schedule = () => {
                     zIndex: 2,
                     position: 'relative',
                     transition: "transform 0.3s ease",
-                    border: "1px solid rgba(255, 255, 255, 0.2)", 
+                    border: "1px solid rgba(255, 255, 255, 0.2)",
                     '&:hover': {
                       transform: 'scale(1.05)',
                     },
@@ -165,19 +165,23 @@ const Schedule = () => {
                     <Typography
                       fontSize={parseInt(smallFontSize) + 4}
                       fontWeight={600}
-                      color="black"
+                      sx={{
+                        background: 'linear-gradient(90deg, #FFD700, #FF8C00)', 
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                      }}
                     >
                       {title}
                     </Typography>
                     <Chip
                       label={time}
-                      icon={<AccessTimeIcon sx={{ color: "#000" }} />}
-                      sx={{ color: "#000", padding: "2px", fontSize: "large" }}
+                      icon={<AccessTimeIcon sx={{ stroke: '#7065F0'}} />}
+                      sx={{ color: "white", padding: "2px", fontSize: "large" }}
                     />
                   </Box>
                   <List sx={{ mt: 2 }}>
                     {scheduleListData.map((item, i) => (
-                      <ListItem key={i} sx={{ p: 0, pl: 2, mt: 1 }}>
+                      <ListItem key={i} sx={{ p: 0, pl: 2, mt: 1, color: "white" }}>
                         <Typography component="li" sx={{ listStyleType: 'disc' }}>
                           {item}
                         </Typography>

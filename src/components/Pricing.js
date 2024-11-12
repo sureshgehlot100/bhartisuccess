@@ -124,10 +124,12 @@ const PricingSection = () => {
       <Grid container spacing={4}>
         {planDetails.map((detail, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card sx={{ height: "100%", boxShadow: 2, borderRadius: 3, transition: "transform 0.3s ease", 
-                  '&:hover': {
-                    transform: 'scale(1.05)', 
-                  },}}>
+            <Card sx={{
+              height: "100%", boxShadow: 2, borderRadius: 3, transition: "transform 0.3s ease",
+              '&:hover': {
+                transform: 'scale(1.05)',
+              },
+            }}>
               <CardContent id="pricingCard">
                 <Typography
                   variant="h4"
@@ -235,7 +237,7 @@ const PricingSection = () => {
                     }}
                     onClick={() => {
                       const isSmallScreen = window.innerWidth < 768;
-                      const scrollToPosition = isSmallScreen ? 600 : 0;
+                      const scrollToPosition = isSmallScreen ? 200 : 0;
                       window.scrollTo(0, scrollToPosition);
                     }}
                   >
@@ -255,7 +257,7 @@ const PricingSection = () => {
                     }}
                     onClick={() => {
                       const isSmallScreen = window.innerWidth < 768;
-                      const scrollToPosition = isSmallScreen ? 600 : 0;
+                      const scrollToPosition = isSmallScreen ? 200 : 0;
                       window.scrollTo(0, scrollToPosition);
                     }}
                   >

@@ -167,8 +167,8 @@ const StickyFooter = () => {
               }}
               onClick={() => {
                 const isSmallScreen = window.innerWidth < 768;
-                const scrollToPosition = isSmallScreen ? 600 : 0;
-                window.scrollTo(0, scrollToPosition);
+                const scrollToPosition = isSmallScreen ? 200 : 0; 
+          window.scrollTo(0, scrollToPosition);
               }}
             >
               Grab Your Tickets Now

@@ -16,7 +16,7 @@ import introduce from "../assets/Westin_54-min.jpg";
 import EventIcon from "@mui/icons-material/Event";
 
 export const GetTickets = () => {
-  
+
   return (
     <Box
       sx={{
@@ -26,15 +26,15 @@ export const GetTickets = () => {
         transition: "transform 0.25s",
         position: 'relative',
         zIndex: 100,
-        animation: "scaleAnimation 1s infinite alternate", 
-        "@keyframes scaleAnimation": { 
+        animation: "scaleAnimation 1s infinite alternate",
+        "@keyframes scaleAnimation": {
           "0%": {
             transform: "scale(1)",
           },
           "100%": {
             transform: "scale(0.95, 0.95)",
           },
-        },       
+        },
       }}
     >
       <Button
@@ -44,7 +44,8 @@ export const GetTickets = () => {
           p: 1.5,
           fontWeight: 700,
           fontSize: "1rem",
-          bgcolor: "buttoncolor",
+          bgcolor: 'transparent', // Set to transparent to use gradient
+          background: 'linear-gradient(90deg, purple, #4D39C1)', // Set the gradient
           color: "#fff",
           display: "flex",
           alignItems: "center",
@@ -52,7 +53,7 @@ export const GetTickets = () => {
         }}
         onClick={() => {
           const isSmallScreen = window.innerWidth < 768;
-          const scrollToPosition = isSmallScreen ? 600 : 0;
+          const scrollToPosition = isSmallScreen ? 200 : 0; 
           window.scrollTo(0, scrollToPosition);
         }}
       >

@@ -11,68 +11,39 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { GetTickets } from "./Introduce";
 import RegistrationForm from "./RegistrationForm";
+import Banner from '../assets/BSM-landing-page-banner.webp'
 
 const CTA = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Container maxWidth="lg" sx={{ pt: 6 }}>
+    <Container maxWidth="xl" sx={{ pt: 3 }}>
       {/* Main Section */}
       <Box
         sx={{
           mb: 6,
           p: 1,
           borderRadius: "10px",
-          backgroundColor: "#f7f7f9",
+          backgroundColor: "#070422",
         }}
       >
         <Grid container spacing={4} alignItems="center">
           {/* Text Section */}
-          <Grid item xs={12} md={6}>
-            <Typography
-              variant="body1"
+          <Grid item xs={12} md={8}>
+            <Box
+              component="img"
+              src={Banner}
+              alt="Maharashtra's #1 Business Coach Banner"
               sx={{
-                fontSize: "1.4rem",
-                fontWeight: 600,
-                color: "black",
-                mb: 2,
-                letterSpacing: "0.5px",
-                textTransform: "uppercase",
+                width: "100%",
+                borderRadius: "8px",
               }}
-            >
-              Maharashtra's #1 Business Coach, TEDx Speaker, Investor
-            </Typography>
-
-            <Typography
-              variant="h3"
-              sx={{
-                fontSize: "2.5rem",
-                fontWeight: 700,
-                color: "#333",
-                mb: 3,
-                lineHeight: 1.3,
-              }}
-            >
-              Discover the Secrets to Scaling Your Business to 100X
-            </Typography>
-
-            <Typography
-              variant="body2"
-              sx={{
-                fontSize: "1.1rem",
-                color: "#666",
-                fontWeight: 500,
-                mb: 3,
-                lineHeight: 1.6,
-              }}
-            >
-              Unlock life-changing insights on business growth, personal branding, IPOs, funding, and achieving a 100-crore company valuation. Join us to learn directly from top CEOs.
-            </Typography>
+            />
           </Grid>
 
           {/* Form Section */}
-          <Grid item xs={12} md={6} sx={{ pl: isSmallScreen ? 0 : 4 }}>
+          <Grid item xs={12} md={4} sx={{ pl: isSmallScreen ? 0 : 4 }}>
             <Box
               sx={{
                 // backgroundColor: "#fff",
@@ -88,8 +59,8 @@ const CTA = () => {
       </Box>
 
       {/* Video and Event Details Section */}
-      <Grid container spacing={4} sx={{ mb: 6 }}>
-        <Grid item xs={12} md={6}>
+      <Grid container maxWidth="lg" mx={'auto'} sx={{ mb: 6, }} >
+        <Grid item xs={12} md={6} >
           <Box
             sx={{
               position: "relative",
@@ -136,7 +107,7 @@ const CTA = () => {
           </Box>
         </Grid>
 
-        <Grid item xs={12} md={6} mt={3} mb={2}>
+        <Grid item pl={2} xs={12} md={6} mt={3} mb={2}>
           <Grid container spacing={3}>
             {/* Date and Time */}
             <Grid item xs={12} sm={6}>
@@ -176,7 +147,7 @@ const CTA = () => {
                   display: "flex",
                   alignItems: "center",
                   bgcolor: "#fff",
-                  padding: 1, 
+                  padding: 1,
                   borderRadius: 2,
                   color: "black",
                   border: "1px solid #ccc",
@@ -202,14 +173,14 @@ const CTA = () => {
             </Grid>
 
             {/* Venue */}
-            <Grid item xs={12} >
+            <Grid item xs={12}>
               <Box
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   bgcolor: "#fff",
                   padding: 1,
-                   
+
                   borderRadius: 2,
                   color: "black",
                   border: "1px solid #ccc",
@@ -245,7 +216,7 @@ const CTA = () => {
                   bgcolor: "#fff",
                   padding: 1,
 
-                   
+
                   borderRadius: 2,
                   color: "black",
                   border: "1px solid #ccc",
@@ -273,6 +244,9 @@ const CTA = () => {
             </Grid>
           </Grid>
         </Grid>
+        <Box sm={12} lg={12} sx={{ mt: 4, width: "100%" }} >
+          <GetTickets />
+        </Box>
       </Grid>
 
       {/* CTA Button */}
@@ -298,7 +272,7 @@ const CTA = () => {
             Grab Your Tickets Now
           </Button>
         </Box> */}
-      <GetTickets />
+
     </Container>
   );
 };
