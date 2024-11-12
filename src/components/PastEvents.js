@@ -108,6 +108,7 @@ const PastEvents = () => {
                 <img
                   src={src}
                   alt={`gallery-small-${index}`}
+                  loading="lazy"
                   style={{
                     width: "100%",
                     height: "100%",
@@ -150,6 +151,7 @@ const PastEvents = () => {
                 <img
                   src={src}
                   alt={`gallery-small-${index}`}
+                  loading="lazy"
                   style={{
                     width: "100%",
                     height: "100%",
@@ -192,6 +194,7 @@ const PastEvents = () => {
                 <img
                   src={src}
                   alt={`gallery-large-${index}`}
+                  loading="lazy"
                   style={{
                     width: "100%",
                     height: "100%",
