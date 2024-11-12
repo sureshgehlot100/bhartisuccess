@@ -23,7 +23,7 @@ const CTA = () => {
       <Box
         sx={{
           mb: 6,
-          p: 1,
+          p: 0,
           borderRadius: "10px",
           backgroundColor: "#070422",
         }}
