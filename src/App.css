@@ -17,9 +17,9 @@ body {
   background-color: var(--major);
 } 
 
-/* .css-aq183p-MuiGrid-root {
+.css-aq183p-MuiGrid-root {
   margin-left: -8px;
-} */
+}
 
 li {
   font-family: "Montserrat", sans-serif;

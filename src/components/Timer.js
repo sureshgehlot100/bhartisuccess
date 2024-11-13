@@ -37,7 +37,8 @@ const StickyFooter = () => {
         position: "fixed",
         bottom: 0,
         width: "100%",
-        backgroundColor: "#7065f0",
+        bgcolor: 'transparent', // Set to transparent to use gradient
+        background: 'linear-gradient(90deg, purple, #7065F0)',
         color: "#fff",
         zIndex: 1000,
         py: { xs: 1, md: 2 },
@@ -167,8 +168,8 @@ const StickyFooter = () => {
               }}
               onClick={() => {
                 const isSmallScreen = window.innerWidth < 768;
-                const scrollToPosition = isSmallScreen ? 200 : 0; 
-          window.scrollTo(0, scrollToPosition);
+                const scrollToPosition = isSmallScreen ? 200 : 0;
+                window.scrollTo(0, scrollToPosition);
               }}
             >
               Grab Your Tickets Now

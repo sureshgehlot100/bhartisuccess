@@ -12,7 +12,7 @@ import {
 import { useTheme } from "@mui/material/styles";
 import useResponsiveFontSize from "../useResponsiveFontSize";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import introduce from "../assets/Westin_54-min.jpg";
+import introduce from "../assets/introduce.jpg";
 import EventIcon from "@mui/icons-material/Event";
 
 export const GetTickets = () => {

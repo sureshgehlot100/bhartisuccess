@@ -158,7 +158,8 @@ export default function RegistrationForm() {
           type="submit"
           variant="contained"
           fullWidth
-          sx={{ marginTop: 2, backgroundColor: '#7065f0', color: '#fff'  }}
+          sx={{ marginTop: 2, backgroundColor: '#7065f0', color: '#fff',bgcolor: 'transparent', // Set to transparent to use gradient
+            background: 'linear-gradient(90deg, purple, #4D39C1)',  }}
         >
           Submit
         </Button>
